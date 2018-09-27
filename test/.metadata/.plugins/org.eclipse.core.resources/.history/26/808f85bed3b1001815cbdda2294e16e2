@@ -1,0 +1,23 @@
+package com.stackroute.recommendation.relations;
+
+import org.neo4j.ogm.annotation.EndNode;
+import org.neo4j.ogm.annotation.Id;
+import org.neo4j.ogm.annotation.RelationshipEntity;
+import org.neo4j.ogm.annotation.StartNode;
+
+import com.stackroute.recommendation.domain.User;
+import com.stackroute.recommendation.domain.UserPreferences;
+
+
+	@RelationshipEntity(type = "likes")
+	public class Liked {
+	@Id
+		@StartNode
+		private User user;
+		@EndNode
+		private Wishlist wishlist;
+
+		public Liked() {
+
+		}
+}

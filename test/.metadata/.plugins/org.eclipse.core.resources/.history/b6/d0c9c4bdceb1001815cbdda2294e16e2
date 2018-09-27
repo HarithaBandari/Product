@@ -1,0 +1,18 @@
+package com.stackroute.orderdetails.domain;
+
+
+@Document
+public class Location {
+   private String orderLatitude;
+   private String orderLongitude;    public String getOrderLatitude() {
+       return orderLatitude;
+   }
+   public void setOrderLatitude(String orderLatitude) {
+       this.orderLatitude = orderLatitude;
+   }
+   public String getOrderLongitude() {
+       return orderLongitude;
+   }
+   public void setOrderLongitude(String orderLongitude) {
+       this.orderLongitude = orderLongitude;
+   }}

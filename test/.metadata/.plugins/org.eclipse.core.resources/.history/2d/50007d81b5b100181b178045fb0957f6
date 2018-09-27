@@ -1,0 +1,9 @@
+package com.stackroute.userprofile.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.stackroute.userprofile.domain.Wishlist;
+
+public interface WishlistRepository extends CrudRepository<Wishlist, Integer> {
+
+}

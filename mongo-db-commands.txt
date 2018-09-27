@@ -1,0 +1,14 @@
+to find all records:
+    db.database-name.find();
+
+to delete all records;
+    db.database-name.remove({});
+
+application.properties:
+
+spring.data.mongodb.database=userprofile
+spring.data.mongodb.host=localhost
+spring.data.mongodb.password=root123
+spring.data.mongodb.port=27017
+spring.data.mongodb.uri=mongodb://localhost/userprofile
+spring.data.mongodb.username=

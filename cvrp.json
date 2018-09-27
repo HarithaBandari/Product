@@ -1,0 +1,643 @@
+{
+  "date": "12-08-2018",
+  "slots": [
+    {
+      "slotId": "0",
+      "slotDuration": "180",
+      "slotStartTime": "0900",
+      "slotEndTime": "1200",
+      "slotNoOfVehicles": "3",
+      "slotCost": "50",
+      "slotVehicle": [
+        {
+          "vehicleId": "1",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "3240000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "4",
+              "orderConsumerName": "haritha",
+              "orderConsumerAddress": "koramangala",
+              "orderConsumerPhone": "7794965552",
+              "orderLocation": {
+                "orderLatitude": "12.9259",
+                "orderLongitude": "77.6229"
+              },
+              "orderVolume": "3",
+              "orderDate": "04-08-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "5",
+              "orderConsumerName": "shirisha",
+              "orderConsumerAddress": "whitefield",
+              "orderConsumerPhone": "9573678144",
+              "orderLocation": {
+                "orderLatitude": "12.9716",
+                "orderLongitude": "77.7473"
+              },
+              "orderVolume": "4",
+              "orderDate": "11-07-2018",
+              "isDepot": "false",
+              "isRouted": "false",
+              "availableSlots": {
+                "slotAvailability": ["false", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "6",
+              "orderConsumerName": "eshwari",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9989675432",
+              "orderLocation": {
+                "orderLatitude": " 12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "27-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        },
+
+        {
+          "vehicleId": "2",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "1230000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "1",
+              "orderConsumerName": "teja",
+              "orderConsumerAddress": "koramangala",
+              "orderConsumerPhone": "7794966782",
+              "orderLocation": {
+                "orderLatitude": "12.9259",
+                "orderLongitude": "77.6229"
+              },
+              "orderVolume": "5",
+              "orderDate": "27-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "2",
+              "orderConsumerName": "sumanth",
+              "orderConsumerAddress": "whitefield",
+              "orderConsumerPhone": "9573674544",
+              "orderLocation": {
+                "orderLatitude": "12.9716",
+                "orderLongitude": "77.7473"
+              },
+              "orderVolume": "4",
+              "orderDate": "02-07-2018",
+              "isDepot": "false",
+              "isRouted": "false",
+              "availableSlots": {
+                "slotAvailability": ["false", "true", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "3",
+              "orderConsumerName": "venkat",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9989667432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "21-02-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        },
+        {
+          "vehicleId": "3",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "3450000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "7",
+              "orderConsumerName": "hari",
+              "orderConsumerAddress": "madiwala",
+              "orderConsumerPhone": "7794565552",
+              "orderLocation": {
+                "orderLatitude": "12.925232",
+                "orderLongitude": "77.615152"
+              },
+              "orderVolume": "4",
+              "orderDate": "14-08-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "8",
+              "orderConsumerName": "sid",
+              "orderConsumerAddress": "silk board",
+              "orderConsumerPhone": "9233678144",
+              "orderLocation": {
+                "orderLatitude": "12.96991",
+                "orderLongitude": "77.59796"
+              },
+              "orderVolume": "4",
+              "orderDate": "11-07-2018",
+              "isDepot": "false",
+              "isRouted": "fatruelse",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "8",
+              "orderConsumerName": "shivam",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9983475432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "25-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slotId": "1",
+      "slotDuration": "180",
+      "slotStartTime": "0100",
+      "slotEndTime": "0500",
+      "slotNoOfVehicles": "3",
+      "slotCost": "60",
+      "slotVehicle": [
+        {
+          "vehicleId": "1",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "3240000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "4",
+              "orderConsumerName": "haritha",
+              "orderConsumerAddress": "koramangala",
+              "orderConsumerPhone": "7794965552",
+              "orderLocation": {
+                "orderLatitude": " 12.9259",
+                "orderLongitude": "77.6229"
+              },
+              "orderVolume": "3",
+              "orderDate": "04-08-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "5",
+              "orderConsumerName": "shirisha",
+              "orderConsumerAddress": "whitefield",
+              "orderConsumerPhone": "9573678144",
+              "orderLocation": {
+                "orderLatitude": "12.9716",
+                "orderLongitude": "77.7473"
+              },
+              "orderVolume": "4",
+              "orderDate": "11-07-2018",
+              "isDepot": "false",
+              "isRouted": "false",
+              "availableSlots": {
+                "slotAvailability": ["false", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "6",
+              "orderConsumerName": "eshwari",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9989675432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "27-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        },
+
+        {
+          "vehicleId": "2",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "1230000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "1",
+              "orderConsumerName": "teja",
+              "orderConsumerAddress": "koramangala",
+              "orderConsumerPhone": "7794966782",
+              "orderLocation": {
+                "orderLatitude": " 12.9259",
+                "orderLongitude": "77.6229"
+              },
+              "orderVolume": "5",
+              "orderDate": "27-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "2",
+              "orderConsumerName": "sumanth",
+              "orderConsumerAddress": "whitefield",
+              "orderConsumerPhone": "9573674544",
+              "orderLocation": {
+                "orderLatitude": "12.9716",
+                "orderLongitude": "77.7473"
+              },
+              "orderVolume": "4",
+              "orderDate": "02-07-2018",
+              "isDepot": "false",
+              "isRouted": "false",
+              "availableSlots": {
+                "slotAvailability": ["false", "true", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "3",
+              "orderConsumerName": "venkat",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9989667432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "21-02-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        },
+        {
+          "vehicleId": "3",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "3450000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "7",
+              "orderConsumerName": "hari",
+              "orderConsumerAddress": "madiwala",
+              "orderConsumerPhone": "7794565552",
+              "orderLocation": {
+                "orderLatitude": "12.925232",
+                "orderLongitude": "77.615152"
+              },
+              "orderVolume": "4",
+              "orderDate": "14-08-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "8",
+              "orderConsumerName": "sid",
+              "orderConsumerAddress": "silk board",
+              "orderConsumerPhone": "9233678144",
+              "orderLocation": {
+                "orderLatitude": "12.96991",
+                "orderLongitude": "77.59796"
+              },
+              "orderVolume": "4",
+              "orderDate": "11-07-2018",
+              "isDepot": "false",
+              "isRouted": "fatruelse",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "8",
+              "orderConsumerName": "shivam",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9983475432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "25-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "slotId": "2",
+      "slotDuration": "180",
+      "slotStartTime": "0600",
+      "slotEndTime": "1000",
+      "slotNoOfVehicles": "3",
+      "slotCost": "70",
+      "slotVehicle": [
+        {
+          "vehicleId": "1",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "3240000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "4",
+              "orderConsumerName": "haritha",
+              "orderConsumerAddress": "koramangala",
+              "orderConsumerPhone": "7794965552",
+              "orderLocation": {
+                "orderLatitude": " 12.9259",
+                "orderLongitude": "77.6229"
+              },
+              "orderVolume": "3",
+              "orderDate": "04-08-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "5",
+              "orderConsumerName": "shirisha",
+              "orderConsumerAddress": "whitefield",
+              "orderConsumerPhone": "9573678144",
+              "orderLocation": {
+                "orderLatitude": "12.9716",
+                "orderLongitude": "77.7473"
+              },
+              "orderVolume": "4",
+              "orderDate": "11-07-2018",
+              "isDepot": "false",
+              "isRouted": "false",
+              "availableSlots": {
+                "slotAvailability": ["false", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "6",
+              "orderConsumerName": "eshwari",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9989675432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "27-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        },
+
+        {
+          "vehicleId": "2",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "1230000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "1",
+              "orderConsumerName": "teja",
+              "orderConsumerAddress": "koramangala",
+              "orderConsumerPhone": "7794966782",
+              "orderLocation": {
+                "orderLatitude": " 12.9259",
+                "orderLongitude": "77.6229"
+              },
+              "orderVolume": "5",
+              "orderDate": "27-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "2",
+              "orderConsumerName": "sumanth",
+              "orderConsumerAddress": "whitefield",
+              "orderConsumerPhone": "9573674544",
+              "orderLocation": {
+                "orderLatitude": "12.9716",
+                "orderLongitude": "77.7473"
+              },
+              "orderVolume": "4",
+              "orderDate": "02-07-2018",
+              "isDepot": "false",
+              "isRouted": "false",
+              "availableSlots": {
+                "slotAvailability": ["false", "true", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "3",
+              "orderConsumerName": "venkat",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9989667432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "21-02-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        },
+        {
+          "vehicleId": "3",
+          "vehicleCapacity": "5670000",
+          "vehicleLoadedCapacity": "3450000",
+          "vehicleRouteDuration": "120",
+          "vehicleRouteDurationLimit": "180",
+          "vehicleCurrentLocation": "bangalore",
+          "vehicleRoute": [
+            {
+              "orderId": "7",
+              "orderConsumerName": "hari",
+              "orderConsumerAddress": "madiwala",
+              "orderConsumerPhone": "7794565552",
+              "orderLocation": {
+                "orderLatitude": "12.925232",
+                "orderLongitude": "77.615152"
+              },
+              "orderVolume": "4",
+              "orderDate": "14-08-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 1"
+            },
+            {
+              "orderId": "8",
+              "orderConsumerName": "sid",
+              "orderConsumerAddress": "silk board",
+              "orderConsumerPhone": "9233678144",
+              "orderLocation": {
+                "orderLatitude": "12.96991",
+                "orderLongitude": "77.59796"
+              },
+              "orderVolume": "4",
+              "orderDate": "11-07-2018",
+              "isDepot": "false",
+              "isRouted": "fatruelse",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "true"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 2"
+            },
+            {
+              "orderId": "8",
+              "orderConsumerName": "shivam",
+              "orderConsumerAddress": "marathahalli",
+              "orderConsumerPhone": "9983475432",
+              "orderLocation": {
+                "orderLatitude": "12.95619",
+                "orderLongitude": "77.70194"
+              },
+              "orderVolume": "5",
+              "orderDate": "25-07-2018",
+              "isDepot": "true",
+              "isRouted": "true",
+              "availableSlots": {
+                "slotAvailability": ["true", "false", "false"],
+                "slotCost": ["60", "70", "50"]
+              },
+              "selectedSlot": "Slot 3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+
+install firebase:
+npm install firebase-tools -g
+
+to create files:
+firebase init hosting
+
+touch/app.js
+
+run:firebase serve

@@ -1,0 +1,73 @@
+package com.stackroute.recommendation.domain;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.neo4j.ogm.annotation.GeneratedValue;
+import org.neo4j.ogm.annotation.Id;
+import org.neo4j.ogm.annotation.NodeEntity;
+import org.neo4j.ogm.annotation.Relationship;
+
+@NodeEntity
+public class UserPreferences {
+	@Id @GeneratedValue
+	private Long nodeId;
+	private String[] userPreferences;
+	@Relationship(type = "likes", direction = Relationship.INCOMING)
+	private List<User> user;
+	public UserPreferences() {
+		
+	}
+
+	public UserPreferences(String[] userPreferences) {
+		this.userPreferences = userPreferences;
+	}
+
+	@Override
+	public String toString() {
+		return "UserPreferences [userPreferences=" + Arrays.toString(userPreferences) + "]";
+	}
+
+	public String[] getUserPreferences() {
+		return userPreferences;
+	}
+
+	public void setUserPreferences(String[] userPreferences) {
+		this.userPreferences = userPreferences;
+	}
+
+	
+}
+
+//package com.stackroute.recommendation.domain;
+//
+//import org.neo4j.ogm.annotation.GeneratedValue;
+//import org.neo4j.ogm.annotation.Id;
+//import org.neo4j.ogm.annotation.NodeEntity;
+//
+//
+//@NodeEntity
+//public class Author {
+//	@Id @GeneratedValue
+//	private Long nodeId;
+//	private String name;
+//	public Author(String name) {
+//		
+//		this.name = name;
+//	}
+//	@Override
+//	public String toString() {
+//		return "Author [ name=" + name + "]";
+//	}
+//	public Author() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//	}
+//	public String getName() {
+//		return name;
+//	}
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//
+//}

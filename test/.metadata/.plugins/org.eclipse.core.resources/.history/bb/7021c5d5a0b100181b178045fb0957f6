@@ -1,0 +1,49 @@
+package com.stackroute.recommendation.relations;
+
+import org.neo4j.ogm.annotation.EndNode;
+import org.neo4j.ogm.annotation.RelationshipEntity;
+import org.neo4j.ogm.annotation.StartNode;
+
+import com.stackroute.recommendation.domain.User;
+import com.stackroute.recommendation.domain.UserPreferences;
+
+@RelationshipEntity(type = "likes")
+public class Likes {
+@Id
+	@StartNode
+	private User user;
+	@EndNode
+	private UserPreferences userPreferences;
+
+	public Likes() {
+
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public UserPreferences getUserPreferences() {
+		return userPreferences;
+	}
+
+	public void setUserPreferences(UserPreferences userPreferences) {
+		this.userPreferences = userPreferences;
+	}
+
+	public Likes(User user, UserPreferences userPreferences) {
+		super();
+		this.user = user;
+		this.userPreferences = userPreferences;
+	}
+
+	@Override
+	public String toString() {
+		return "Likes [user=" + user + ", userPreferences=" + userPreferences + "]";
+	}
+
+}

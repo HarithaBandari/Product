@@ -1,0 +1,17 @@
+connection refused , cannot execute on any known server:
+connect the database or start the database
+
+port already in use:
+kill the port using: sudo netstat -nlp | grep <portnum>
+sudo kill -TERM <--->
+
+broker error:
+start kafka
+
+Null pointer exception in saving(in recommendation ms):
+do not declare field as null
+include all instances of repos in constructor
+
+trusted package issue:
+package names of producer and consumer should be same
+

@@ -1,0 +1,27 @@
+package com.stackroute.orderdetails.domain;
+
+import java.util.Arrays;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Orderdetails {
+	
+	@Id
+	private String id;
+	private int orderId;
+	private String orderConsumerName;
+	private String orderConsumerAddress;
+	private String orderConsumerNumber;
+	private Location orderLocation;
+	private String orderVolume;
+	private String orderDate;
+	private String availableSlots;
+	private String selectedSlots;
+	private String orderQuantity;
+	private String emailId;
+	private String price;
+
+	
+	
+}

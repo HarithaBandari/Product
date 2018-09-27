@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.neo4j.ogm.annotation.GeneratedValue"/>
+<fullyQualifiedTypeName name="org.neo4j.ogm.annotation.Id"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.mapping.Document"/>
+<fullyQualifiedTypeName name="com.stackroute.userprofile.repository.WishlistRepository"/>
+<fullyQualifiedTypeName name="com.stackroute.userprofile.domain.Wishlist"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.Id"/>
+</qualifiedTypeNameHistroy>

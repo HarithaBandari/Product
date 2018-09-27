@@ -1,0 +1,104 @@
+package com.stackroute.orderdetails.domain;
+
+import java.util.Arrays;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Orderdetails {
+	@Id
+	private int orderId;
+	private String id;
+	private String orderName;
+	private float price;
+	private String[] userAddress;
+	private String orderDate;
+	private String deliveryDate;
+	private int quantity;
+	private String timeslot;
+
+	public Orderdetails() {
+
+	}
+
+	
+	public String getTimeslot() {
+		return timeslot;
+	}
+
+	public void setTimeslot(String timeslot) {
+		this.timeslot = timeslot;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public int getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+
+	public String getOrderName() {
+		return orderName;
+	}
+
+	public void setOrderName(String orderName) {
+		this.orderName = orderName;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public String[] getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String[] userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(String orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	public String getDeliveryDate() {
+		return deliveryDate;
+	}
+
+	public void setDeliveryDate(String deliveryDate) {
+		this.deliveryDate = deliveryDate;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	@Override
+	public String toString() {
+		return "Orderdetails [id=" + id + ", orderId=" + orderId + ", orderName=" + orderName + ", price=" + price
+				+ ", userAddress=" + Arrays.toString(userAddress) + ", orderDate=" + orderDate + ", deliveryDate="
+				+ deliveryDate + ", quantity=" + quantity + "]";
+	}
+}

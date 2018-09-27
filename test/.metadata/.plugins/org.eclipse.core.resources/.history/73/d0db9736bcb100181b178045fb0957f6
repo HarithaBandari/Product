@@ -1,0 +1,159 @@
+package com.stackroute.orderdetails.domain;
+
+import java.util.Arrays;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Orderdetails {
+	@Id
+	private int orderId;
+	private String orderName;
+	private float price;
+	private String[] userAddress;
+	private String orderDate;
+	private String deliveryDate;
+
+	public Orderdetails() {
+
+	}
+
+	public Orderdetails(int orderId, String orderName, float price, String[] userAddress, String orderDate,
+			String deliveryDate) {
+		super();
+		this.orderId = orderId;
+		this.orderName = orderName;
+		this.price = price;
+		this.userAddress = userAddress;
+		this.orderDate = orderDate;
+		this.deliveryDate = deliveryDate;
+	}
+
+	
+	
+
+	public int getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+
+	public String getOrderName() {
+		return orderName;
+	}
+
+	public void setOrderName(String orderName) {
+		this.orderName = orderName;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public String[] getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String[] userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(String orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	public String getDeliveryDate() {
+		return deliveryDate;
+	}
+
+	public void setDeliveryDate(String deliveryDate) {
+		this.deliveryDate = deliveryDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Orderdetails [orderId=" + orderId + ", orderName=" + orderName + ", price=" + price + ", userAddress="
+				+ Arrays.toString(userAddress) + ", orderDate=" + orderDate + ", deliveryDate=" + deliveryDate + "]";
+	}
+}
+
+
+
+//
+//package com.stackroute.movieservice.domain;
+//
+//
+//
+//
+//import org.springframework.data.annotation.Id;
+//import org.springframework.data.mongodb.core.mapping.Document;
+//
+//import lombok.AllArgsConstructor;
+//import lombok.Builder;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+//
+//@Document
+//@Data
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Builder
+//public class Movie {
+//	@Id
+//	private int movieId;
+//	private String movieTitle;
+//	private float movieRating;
+//	private int releaseYear;
+//	
+//	
+////	public Movie() {
+////		// TODO Auto-generated constructor stub
+////	}
+//	
+//	public Movie(int movieId, String movieTitle, int movieRating, int releaseYear) {
+//		
+//		this.movieId = movieId;
+//		this.movieTitle = movieTitle;
+//		this.movieRating = movieRating;
+//		this.releaseYear = releaseYear;
+//	}
+//	
+//	public int getMovieId() {
+//		return movieId;
+//	}
+//	public void setMovieId(int movieId) {
+//		this.movieId = movieId;
+//	}
+//	public String getMovieTitle() {
+//		return movieTitle;
+//	}
+//	public void setMovieTitle(String movieTitle) {
+//		this.movieTitle = movieTitle;
+//	}
+//	public float getMovieRating() {
+//		return movieRating;
+//	}
+//	public void setMovieRating(int movieRating) {
+//		this.movieRating = movieRating;
+//	}
+//	public int getReleaseYear() {
+//		return releaseYear;
+//	}
+//	public void setReleaseYear(int releaseYear) {
+//		this.releaseYear = releaseYear;
+//	}
+//
+//
+//}
+

@@ -1,0 +1,158 @@
+package com.stackroute.orderdetails.domain;
+
+import java.util.Arrays;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Orderdetails {
+	
+	
+	private String id;
+	private int orderId;
+	private String orderName;
+	private float price;
+	private String[] userAddress;
+	private String orderDate;
+	private String deliveryDate;
+	private String timeslot;
+	private int quantity;
+	private String emailId;
+	private double mobileNumber;
+
+	public Orderdetails() {
+
+	}
+
+	public Orderdetails(String id, int orderId, String orderName, float price, String[] userAddress, String orderDate,
+			String deliveryDate, String timeslot, int quantity, String emailId, double mobileNumber) {
+		super();
+		this.id = id;
+		this.orderId = orderId;
+		this.orderName = orderName;
+		this.price = price;
+		this.userAddress = userAddress;
+		this.orderDate = orderDate;
+		this.deliveryDate = deliveryDate;
+		this.timeslot = timeslot;
+		this.quantity = quantity;
+		this.emailId = emailId;
+		this.mobileNumber = mobileNumber;
+	}
+
+
+
+
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+
+	public double getMobileNumber() {
+		return mobileNumber;
+	}
+
+
+
+
+
+	public void setMobileNumber(double mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+
+
+
+
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public int getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+
+	public String getOrderName() {
+		return orderName;
+	}
+
+	public void setOrderName(String orderName) {
+		this.orderName = orderName;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
+	public String[] getUserAddress() {
+		return userAddress;
+	}
+
+	public void setUserAddress(String[] userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getOrderDate() {
+		return orderDate;
+	}
+
+	public void setOrderDate(String orderDate) {
+		this.orderDate = orderDate;
+	}
+
+	public String getDeliveryDate() {
+		return deliveryDate;
+	}
+
+	public void setDeliveryDate(String deliveryDate) {
+		this.deliveryDate = deliveryDate;
+	}
+
+	public String getTimeslot() {
+		return timeslot;
+	}
+
+
+
+	public void setTimeslot(String timeslot) {
+		this.timeslot = timeslot;
+	}
+
+
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Orderdetails [id=" + id + ", orderId=" + orderId + ", orderName=" + orderName + ", price=" + price
+				+ ", userAddress=" + Arrays.toString(userAddress) + ", orderDate=" + orderDate + ", deliveryDate="
+				+ deliveryDate + "]";
+	}
+
+}

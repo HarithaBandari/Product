@@ -1,0 +1,45 @@
+package com.stackroute.orderdetails.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.stackroute.orderdetails.domain.Orderdetails;
+import com.stackroute.orderdetails.repository.OrderdetailsRepository;
+
+@Service
+public class OrderdetailsServiceImpl implements OrderdetailsService {
+	OrderdetailsRepository orderdetailsRepository;
+
+	@Autowired
+	public OrderdetailsServiceImpl(OrderdetailsRepository orderdetailsRepository) {
+		this.orderdetailsRepository = orderdetailsRepository;
+	}
+
+	@Override
+	public Orderdetails saveDetails(Orderdetails orderdetails) {
+		return orderdetailsRepository.save(orderdetails);
+	}
+
+	@Override
+	public List<Orderdetails> getAll() {
+		return (List<Orderdetails>) orderdetailsRepository.findAll();
+	}
+
+	@Override
+	public Orderdetails getById(int orderId) {
+	 Optional<Orderdetails> orderbyid =orderdetailsRepository.findById(orderId);
+	 System.out.println(orderbyid+"  ggggggg");
+	return orderbyid.get();
+	}
+
+	
+	@Override
+	public Orderdetails deleteOrder(int orderId) {
+		 Optional<Orderdetails> orderbyid =orderdetailsRepository.findById(orderId);
+		orderdetailsRepository.deleteById(orderId);
+		return orderbyid.get();
+	}
+}

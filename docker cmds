@@ -1,0 +1,64 @@
+to build:
+ng build --product
+
+check images:
+sudo docker images;
+check containers :sudo docker ps;
+
+
+dockerizing:
+
+mvn packages-----(clean compile)
+
+sudo docker build -t book-search:1.0 .
+sudo docker images
+sudo docker login --username harithabandari
+sudo docker tag 185e071301f9<containername> harithabandari/book-search:1.0
+sudo docker push harithabandari/book-search:1.0
+
+
+run databases in docker:
+
+mongodb:
+
+sudo docker run -p 27017:27017 -v /my/own/datadir:/data/db -d mongo
+
+mysql:
+
+sudo docker run -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mysql:5.5
+
+neo4j:
+
+sudo docker run --publish=7474:7474 --publish=7687:7687  -v=$HOME/neo4j/data:/data   -d neo4j
+
+docker file(all small ltrs):
+
+# pull image of jdk
+FROM java:8-jre
+# copy jar file to docker file system
+ADD ./target/recommendation-0.0.1-SNAPSHOT.jar /usr/app/recommendation-0.0.1-SNAPSHOT.jar
+# java -jar <jar fileName>
+WORKDIR usr/app
+ENTRYPOINT ["java","-jar", "recommendation-0.0.1-SNAPSHOT.jar"]
+
+
+stopping containers:
+sudo docker rm $(sudo docker ps -aq)
+
+stopping images:
+sudo docker rmi $(sudo docker images -aq
+
+logs:
+sudo docker logs <container name>
+
+sudo docker-compose -f docker-compose-dev.yml up 
+
+
+
+
+
+
+
+
+
+
